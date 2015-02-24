@@ -1,0 +1,24 @@
+{
+  "name": "node-longreads",
+  "version": "1.0.0",
+  "description": "Longreads REST API",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/auroranou/node_longreads.git"
+  },
+  "author": "Aurora Nou <auroranou@gmail.com> (http://aurorayes.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/auroranou/node_longreads/issues"
+  },
+  "homepage": "https://github.com/auroranou/node_longreads",
+  "dependencies": {
+    "express": "^4.12.0",
+    "mongodb": "^2.0",
+    "mongoose": "^3.8.23"
+  }
+}
