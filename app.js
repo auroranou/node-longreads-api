@@ -20,7 +20,7 @@ var uri = process.env.MONGOOSE_URI || 'mongodb://localhost:27017/test'
 
 mongoose.connect(uri);
 
-app.set('port', (process.env.PORT || 5000))
+app.set('port', (process.env.PORT || 3000))
 
 app.use(express.static(__dirname + '/public'));
 
