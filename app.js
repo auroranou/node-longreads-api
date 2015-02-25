@@ -16,7 +16,7 @@ var schema = {
 
 var LongRead = mongoose.model('LongRead', schema, 'longreads');
 
-var uri = process.env.MONGOOSE_URI || 'mongodb://localhost:27017/test'
+var uri = process.env.MONGOLAB_URI || 'mongodb://localhost:27017/test'
 
 mongoose.connect(uri);
 
