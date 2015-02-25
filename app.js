@@ -4,9 +4,6 @@ var mongoose = require('mongoose');
 var app = express();
 var router = express.Router();
 
-mongoose.connect('ds047911.mongolab.com:47911/node-longreads');
-app.set('port', (process.env.PORT || 5000))
-
 var schema = {
 	title:String,
 	articleUrl:String,
@@ -18,6 +15,12 @@ var schema = {
 }
 
 var LongRead = mongoose.model('LongRead', schema, 'longreads');
+
+var uri = process.env.MONGOOSE_URI || 'mongodb://localhost:27017/test'
+
+mongoose.connect(uri);
+
+app.set('port', (process.env.PORT || 5000))
 
 app.use(express.static(__dirname + '/public'));
 
@@ -49,4 +52,4 @@ app.get('/longreads/longest', function(req, res) {
 	});
 });
 
-// app.listen(3000);
+app.listen(3000);
