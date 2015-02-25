@@ -1,12 +1,11 @@
 var express = require('express');
-var http = require('http');
 var mongoose = require('mongoose');
 
 var app = express();
 var router = express.Router();
-var server = http.createServer(app);
 
-mongoose.connect('mongodb://localhost:27017/test');
+mongoose.connect('ds047911.mongolab.com:47911/node-longreads');
+app.set('port', (process.env.PORT || 5000))
 
 var schema = {
 	title:String,
@@ -50,4 +49,4 @@ app.get('/longreads/longest', function(req, res) {
 	});
 });
 
-server.listen(3000);
+// app.listen(3000);
