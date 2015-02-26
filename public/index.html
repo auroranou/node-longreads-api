@@ -1,41 +1,42 @@
 <!doctype html>
 <html>
 <head>
-	<title>Longreads REST API</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+  <title>Longreads REST API</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
-	<div class='container'>
-		<h1>Longreads REST API</h1>
-		<p>Longreads aggregates long-form fiction and non-fiction articles from around the world. This API theoretically provides programmatic access to read <a href="http://longreads.com/">Longreads</a> data. Currently, only a few hundred records are in the database. See the 'Build your own!' section below for instructions to set up a local version, which can be as extensive as you would like.</p>
-		<p>Responses are available in JSON. Article records are structured in the following format:</p>
-		<p class='code'>
-			{<br>
-				<em>title:</em> string,<br>
-				<em>articleUrl:</em> string,<br>
-				<em>author:</em> string,<br>
-				<em>source:</em> string,<br>
-				<em>pubDate:</em> string,<br>
-				<em>minuteLength:</em> integer,<br>
-				<em>wordLength:</em> string<br>
-			}
-		</p>
-		<h2>Querying the API</h2>
-		<p>The base URI for this API is: <a href="https://longreads-api.herokuapp.com/">https://longreads-api.herokuapp.com/</a></p>
-		<p>Each JSON endpoint returns an array of story objects. Four endpoints are currently available: </p>
-		<h3>GET longreads/short</h3>
-		<p>Returns stories from the Longreads archive that are shorter than 15 minutes.</p>
-		<h3>GET longreads/medium</h3>
-		<p>Returns stories that are longer than 15 minutes, but shorter than 30 minutes.</p>
-		<h3>GET longreads/long</h3>
-		<p>Returns stories that are longer than 30 minutes, but shorter than 45 minutes.</p>
-		<h3>GET longreads/longest</h3>
-		<p>Returns stories that are longer than 45 minutes.</p>
-		<h2>Build your own!</h2>
-		<p>The data behind this API is scraped from Longreads' source code. You can fork and tailor the scraper script to suit your needs <a href="https://github.com/auroranou/longreads_scraper">here</a>.</p>
-		<h2>Disclaimer</h2>
-		<p>None of this data belongs to me, obviously, and no money is being made here. Please don't sue me.</p>
-	</div>
-	<footer><a href="https://github.com/auroranou/node_longreads">View the code on GitHub</a></footer>
+  <div class='container'>
+    <h1>Longreads REST API</h1>
+    <p>Longreads aggregates long-form fiction and non-fiction articles from around the world. This API theoretically provides programmatic access to read <a href="http://longreads.com/">Longreads</a> data. Currently, only a few hundred records are in the database. See the 'Build your own!' section below for instructions to set up a local version, which can be as extensive as you would like.</p>
+    <p>Responses are available in JSON. Article records are structured in the following format:</p>
+    <p class='code'>
+      {<br>
+        <em>title:</em> string,<br>
+        <em>articleUrl:</em> string,<br>
+        <em>author:</em> string,<br>
+        <em>source:</em> string,<br>
+        <em>pubDate:</em> string,<br>
+        <em>minuteLength:</em> integer,<br>
+        <em>wordLength:</em> string<br>
+      }
+    </p>
+    <h2>Querying the API</h2>
+    <p>The base URI for this API is: <a href="https://longreads-api.herokuapp.com/">https://longreads-api.herokuapp.com/</a></p>
+    <p>Each JSON endpoint returns an array of story objects. Four endpoints are currently available: </p>
+    <h3>GET longreads/short</h3>
+    <p>Returns stories from the Longreads archive that are shorter than 15 minutes.</p>
+    <h3>GET longreads/medium</h3>
+    <p>Returns stories that are longer than 15 minutes, but shorter than 30 minutes.</p>
+    <h3>GET longreads/long</h3>
+    <p>Returns stories that are longer than 30 minutes, but shorter than 45 minutes.</p>
+    <h3>GET longreads/longest</h3>
+    <p>Returns stories that are longer than 45 minutes.</p>
+    <h2>Build your own!</h2>
+    <p>The data behind this API is scraped from Longreads' source code. You can fork and tailor the scraper script to suit your needs <a href="https://github.com/auroranou/longreads_scraper">here</a>.</p>
+    <h2>Disclaimer</h2>
+    <p>None of this data belongs to me, obviously, and no money is being made here. Please don't sue me.</p>
+  </div>
+  <footer><a href="https://github.com/auroranou/node_longreads">View the code on GitHub</a></footer>
 </body>
 </html>
