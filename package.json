@@ -17,8 +17,9 @@
   },
   "homepage": "https://github.com/auroranou/node_longreads",
   "dependencies": {
-    "express": "^4.12.0",
-    "mongodb": "^2.0",
-    "mongoose": "^3.8.23"
+    "express": "4.14.0",
+    "kerberos": "0.0.21",
+    "mongodb": "2.2.5",
+    "mongoose": "4.5.7"
   }
 }
