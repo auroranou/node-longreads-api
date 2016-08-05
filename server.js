@@ -16,7 +16,7 @@ let schema = mongoose.Schema({
 
 let Article = mongoose.model('Article', schema);
 
-let uri = process.env.MONGOLAB_URI || 'mongodb://localhost:27017/test';
+let uri = process.env.MONGODB_URI || 'mongodb://localhost:27017/test';
 let port = process.env.PORT || 5000;
 
 mongoose.connect(uri);
